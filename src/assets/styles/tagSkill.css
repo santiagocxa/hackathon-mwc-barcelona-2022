@@ -21,6 +21,7 @@
   padding: 3px;
   position: relative;
   text-transform: lowercase;
+  max-height: 18px;
 }
 
 .Tag-skill::after {

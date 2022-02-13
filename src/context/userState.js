@@ -245,7 +245,6 @@ const UserState = (props) => {
   };
 
   const addSkills = (data) => {
-    console.log(`hola`, data);
     dispatch({ type: ADD_SKILLS, payload: data });
   };
 

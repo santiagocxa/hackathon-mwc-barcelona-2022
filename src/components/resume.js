@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import '../assets/styles/resume.css';
 import Context from '../context/context';
 import TagSkill from './tagSkill';
+
 const Resume = () => {
   const { users } = useContext(Context);
   const { id } = useParams();

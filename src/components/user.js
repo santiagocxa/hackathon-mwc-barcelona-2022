@@ -1,13 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-import '../assets/styles/user.css';
 import ColorRandom from '../assets/utils/colorRandom';
+import '../assets/styles/user.css';
 
 const User = ({ user }) => {
   const color = ColorRandom();
   return (
-    <Link to={`/profile/${user.id}`}>
+    <Link to={`/profile/${user.id}/resume`}>
       <div className='User'>
         <h4 className='User-title'>{user.firstName}</h4>
         <img

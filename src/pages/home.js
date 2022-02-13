@@ -6,6 +6,7 @@ import '../assets/styles/home.css';
 
 const Home = () => {
   const { users } = useContext(Context);
+
   users.sort(function (a, b) {
     return b.id - a.id;
   });
@@ -20,7 +21,7 @@ const Home = () => {
             <Link
               className='Home-item'
               key={item.id}
-              to={`/profile/${item.id}/resume`}
+              to={`/profile/cv/${item.id}`}
             >
               <div className='Home-talent'>
                 <img

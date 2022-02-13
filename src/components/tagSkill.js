@@ -2,7 +2,6 @@ import React from 'react';
 import '../assets/styles/tagSkill.css';
 
 const TagSkill = ({ skill }) => {
-  console.log(skill);
   return (
     <ul className='Tag'>
       {skill !== undefined &&

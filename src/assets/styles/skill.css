@@ -1,6 +1,5 @@
 .Skill {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 10px 10px 40px 10px;
   text-align: justify;
   box-sizing: border-box;
   background: white;
@@ -48,6 +47,7 @@
   padding: 4px 10px 4px 10px;
   background: rgb(246, 248, 250);
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 .Skill-form-tag {
@@ -70,6 +70,7 @@
   display: flex;
   text-align: center;
   justify-content: center;
+  align-items: center;
 }
 
 .Skill-button {
@@ -82,4 +83,18 @@
   background: #2778f1;
   color: white;
   text-transform: uppercase;
+}
+
+.on {
+  visibility: visible;
+  background: #baffba;
+  text-align: center;
+  color: green;
+  font-size: 13px;
+  border-radius: 5px;
+  transition: 400ms;
+}
+
+.off {
+  visibility: hidden;
 }

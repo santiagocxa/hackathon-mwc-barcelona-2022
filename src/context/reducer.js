@@ -23,7 +23,7 @@ const Reducer = (state, action) => {
       return {
         ...state,
         users: state.users.map((user) =>
-          user.id == payload.id
+          user.id === Number(payload.id)
             ? {
                 ...user,
                 country: payload.country,
@@ -37,7 +37,7 @@ const Reducer = (state, action) => {
       return {
         ...state,
         users: state.users.map((user) =>
-          user.id == payload.id
+          user.id === Number(payload.id)
             ? {
                 ...user,
                 experience: payload.experience,

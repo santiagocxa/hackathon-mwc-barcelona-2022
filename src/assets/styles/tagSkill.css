@@ -2,9 +2,12 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding: 0;
-  padding-right: 10px;
   margin-bottom: 50px;
+  border: 1px solid #e1dddd;
+  padding: 0 10px 10px 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  min-height: 50px;
 }
 
 .Tag-skill {
@@ -17,6 +20,7 @@
   color: white;
   padding: 3px;
   position: relative;
+  text-transform: lowercase;
 }
 
 .Tag-skill::after {

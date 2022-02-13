@@ -9,8 +9,7 @@ const Details = () => {
   const { users, addDetails } = useContext(Context);
   const user = users.find((user) => user.id == id);
   const [stateUser, setStateUser] = useState(user);
-
-  console.log(`usesr `, stateUser);
+  const [response, setResponse] = useState({ tags: 'off' });
 
   useEffect(() => {
     setStateUser({
@@ -23,11 +22,14 @@ const Details = () => {
       ...stateUser,
       [event.target.name]: event.target.value,
     });
-    console.log(stateUser);
   };
+
   const handleSubmit = (event) => {
     event.preventDefault();
     addDetails(stateUser);
+    setResponse(() => ({
+      tags: 'on',
+    }));
   };
 
   return (
@@ -90,6 +92,7 @@ const Details = () => {
             ></textarea>
           </dd>
         </dl>
+        <div className={response.tags || 'off'}>Saved Record</div>
         <ButtonSubmit />
       </form>
     </section>

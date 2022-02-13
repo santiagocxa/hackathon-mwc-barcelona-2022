@@ -1,9 +1,9 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Context from '../context/context';
-import '../assets/styles/skill.css';
 import TagSkill from './tagSkill';
 import ButtonSubmit from './buttonSubmit';
+import '../assets/styles/skill.css';
 
 const Skill = () => {
   const [tag, setTag] = useState([]);
@@ -11,6 +11,7 @@ const Skill = () => {
   const { id } = useParams();
   const [userSkills, setUserSkills] = useState();
   const { addSkills } = useContext(Context);
+  const [response, setResponse] = useState({ tags: 'off' });
 
   const handleOnChangeTag = (event) => {
     setTag({
@@ -45,15 +46,12 @@ const Skill = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    setUserSkills({
-      ...userSkills,
-      skill,
-      id: id,
-    });
     addSkills(userSkills);
+    setResponse(() => ({
+      tags: 'on',
+    }));
   };
 
-  useEffect(() => console.log(`user:`, userSkills), [userSkills]);
   return (
     <section className='Skill'>
       <h3 className='Skill-title'>Skill</h3>
@@ -110,6 +108,7 @@ const Skill = () => {
             <TagSkill skill={skill || null} />
           </dd>
         </dl>
+        <div className={response.tags || 'off'}>Saved Record</div>
         <ButtonSubmit />
       </form>
     </section>

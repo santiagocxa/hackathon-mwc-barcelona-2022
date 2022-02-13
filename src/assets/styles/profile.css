@@ -1,12 +1,25 @@
 .Profile {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Profile-container {
+  width: 100%;
+  display: flex;
 }
 .Profile-menu {
-  width: 20%;
+  width: 25%;
   background-color: #2778f1;
 }
 .Profile-details {
-  width: 80%;
-  height: 100vh;
+  width: 75%;
   background: #edf3fe;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .Profile-container {
+    max-width: 1000px;
+  }
 }

@@ -1,0 +1,34 @@
+.Resume {
+  padding: 10px 10px 40px 10px;
+  text-align: justify;
+  box-sizing: border-box;
+  background: white;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.Resume-title {
+  text-align: center;
+}
+
+.Resume-info {
+  border-top: 1px solid #e1dddd;
+  border-bottom: 1px solid #e1dddd;
+}
+
+.Resume-info strong {
+  font-weight: 900;
+  font-size: 17px;
+}
+
+.Resume-skill {
+  border-top: 1px solid #e1dddd;
+  padding-bottom: 50px;
+}
+
+@media only screen and (min-width: 768px) {
+  .Resume {
+    max-width: 1000px;
+    padding: 5% 5% 40px 5%;
+  }
+}

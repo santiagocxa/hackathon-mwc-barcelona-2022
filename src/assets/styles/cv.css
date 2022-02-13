@@ -1,0 +1,8 @@
+.Cv {
+  background: #edf3fe;
+  padding: 5%;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

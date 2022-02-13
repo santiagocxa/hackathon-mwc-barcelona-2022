@@ -1,0 +1,19 @@
+.User {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.User-title {
+  text-transform: capitalize;
+  color: black;
+}
+
+.User-image {
+  height: 40px;
+  border-radius: 50%;
+  background-color: beige;
+  border: solid blanchedalmond;
+  margin-left: 5px;
+}

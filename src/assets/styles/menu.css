@@ -1,0 +1,35 @@
+.Menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  min-height: 90vh;
+}
+
+.Menu a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Menu-option {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 3px;
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.Menu .active .Menu-option {
+  background-color: #edf3fe;
+  transition: 500ms;
+  color: #2778f1;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  .Menu-option {
+    padding-left: 20px;
+  }
+}

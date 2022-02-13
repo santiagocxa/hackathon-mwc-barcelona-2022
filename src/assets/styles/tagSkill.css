@@ -1,0 +1,40 @@
+.Tag {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  padding-right: 10px;
+  margin-bottom: 50px;
+}
+
+.Tag-skill {
+  list-style: none;
+  margin-top: 10px;
+  margin-left: 35px;
+  font-size: 12px;
+  font-weight: 200;
+  background: #2778f1;
+  color: white;
+  padding: 3px;
+  position: relative;
+}
+
+.Tag-skill::after {
+  content: '';
+  margin-top: -3px;
+  border: solid;
+  position: absolute;
+  margin-left: 3px;
+  border-width: 11px 0px 13px 14px;
+  border-color: transparent transparent transparent #2778f1;
+}
+
+.Tag-skill::before {
+  content: '';
+  margin-top: -3px;
+  border: solid;
+  position: absolute;
+  left: -5px;
+  border-width: 0 3px 24px 0px;
+  border-color: #2778f1;
+}

@@ -1,11 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import App from './routes/App';
+import './assets/styles/index.css';
 import reportWebVitals from './reportWebVitals';
+import UserState from './context/userState';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <UserState>
+      <App />
+    </UserState>
   </React.StrictMode>,
   document.getElementById('root')
 );

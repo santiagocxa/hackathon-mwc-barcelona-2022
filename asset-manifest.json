@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/hackathon-mwc-barcelona-2022/static/css/main.d89325a9.css",
+    "main.css": "/hackathon-mwc-barcelona-2022/static/css/main.f5328f61.css",
     "main.js": "/hackathon-mwc-barcelona-2022/static/js/main.396fc26a.js",
     "static/js/787.a9585122.chunk.js": "/hackathon-mwc-barcelona-2022/static/js/787.a9585122.chunk.js",
     "index.html": "/hackathon-mwc-barcelona-2022/index.html",
-    "main.d89325a9.css.map": "/hackathon-mwc-barcelona-2022/static/css/main.d89325a9.css.map",
+    "main.f5328f61.css.map": "/hackathon-mwc-barcelona-2022/static/css/main.f5328f61.css.map",
     "main.396fc26a.js.map": "/hackathon-mwc-barcelona-2022/static/js/main.396fc26a.js.map",
     "787.a9585122.chunk.js.map": "/hackathon-mwc-barcelona-2022/static/js/787.a9585122.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d89325a9.css",
+    "static/css/main.f5328f61.css",
     "static/js/main.396fc26a.js"
   ]
 }
